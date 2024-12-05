@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import LoginForm from "./Loginform";
 import SignUpForm from "./Signupform";
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 const Navbar = () => {
   const [showLogin, setShowLogin] = useState(false);
@@ -10,7 +11,7 @@ const Navbar = () => {
   return (
     <>
       <nav className="navbar">
-        <div className="navbar-icon">AppyStack</div>
+        <div className="navbar-icon"><GitHubIcon /></div>
         <ul className="navbar-links">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
